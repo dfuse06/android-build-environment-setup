@@ -65,6 +65,7 @@ do
         sleep 4
         cd ~/android-sdk/tools/
         android
+        cd ~/
         echo "Done.";
         clear 
         break;
