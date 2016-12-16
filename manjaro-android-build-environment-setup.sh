@@ -30,7 +30,7 @@ do
     case $opt in
     "Install packages")
         echo "Getting packages.";
-        yaourt -S git gnupg flex bison gperf sdl wxgtk squashfs-tools curl ncurses zlib schedtool perl-switch zip unzip libxslt python2-virtualenv bc gcc-multilib lib32-zlib lib32-libtinfo
+        yaourt -S --noconfirm git gnupg flex bison gperf sdl wxgtk squashfs-tools curl ncurses zlib schedtool perl-switch zip unzip libxslt python2-virtualenv bc gcc-multilib lib32-zlib lib32-libtinfo
         clear
         echo "Setting up to get ncurses5-compat-libs and installing.";
         sleep 2
@@ -39,7 +39,7 @@ do
         clear 
         echo "Getting just a few more packages.";
         sleep 2
-        yaourt -S lib32-readline make-3.81 pngcrush pngquant rsync
+        yaourt -S --noconfirm lib32-readline make-3.81 pngcrush pngquant rsync
         sleep 2
         clear 
         echo "Settings up bin folder & repo.";
@@ -72,7 +72,7 @@ do
         ;;
      "Install Java 7 and set Java 7 as default")
         echo "Installing.";
-        yaourt -S jdk7-openjdk
+        yaourt -S --noconfirm jdk7-openjdk
         sleep 2
         echo "Setting java 7 as default.";
         sudo archlinux-java set Java-7-openjdk
@@ -86,7 +86,7 @@ do
         ;;
      "Install Java 8 and set Java 8 as default")
        echo "Installing.";
-       yaourt -S jdk8-openjdk
+       yaourt -S --noconfirm jdk8-openjdk
        sleep 2
        echo "Setting java 8 as default.";
        sudo  archlinux-java set java-8-openjdk
