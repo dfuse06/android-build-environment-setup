@@ -52,7 +52,7 @@ do
         clear 
         break;
         ;;
-     "Get Android SDk")
+     "Get Android SDK")
         echo "Downloading Android-SDK.";
         cd ~/
         wget http://www.mediafire.com/file/y2ccf55b5myavf5/tools_r25.2.3-linux.zip
