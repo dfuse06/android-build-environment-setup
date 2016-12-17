@@ -24,7 +24,7 @@ echo "Install a Android build environment for Manjaro.";
 while true
 do 
   PS3='Pick an option!:'
-  options=("Install packages" "Get Android SDK" "Install Java 7 and set Java 7 as default" "Install Java 8 and set Java 8 as default" "Symlink make-3.81 and python2" "Add your exports" "Find me on Google Plus" "Quit")
+  options=("Install packages" "Get Android SDK" "Install Java 7 and set Java 7 as default" "Install Java 8 and set Java 8 as default" "Symlink make-3.81 and python2" "Find me on Google Plus" "Quit")
   select opt in "${options[@]}"
 do
     case $opt in
@@ -64,7 +64,7 @@ do
         echo "To install other SDK tools, use the sdkmanager.....Wait I will bring you there.";
         sleep 4
         cd ~/android-sdk/tools/
-        android
+        bash android
         cd ~/
         echo "Done.";
         clear 
@@ -108,20 +108,6 @@ do
        clear 
        break;
        ;;
-     "Add your exports")
-        echo "export LANG=C" >> .bashrc
-        echo "export PATH=~/bin:$PATH" >> .bashrc
-        echo "export PATH=$PATH:~/android-sdk/tools/" >> .bashrc
-        echo "export PATH=$PATH:~/android-sdk/platform-tools/" >> .bashrc
-        echo "export USE_CCACHE=1" >> .bashrc
-        echo "export CCACHE_DIR=~/.ccache" >> .bashrc
-        echo "export JAVA_HOME=/usr/lib/jvm/java" >> .bashrc
-        source ~/.bashrc
-        sleep 4
-        echo "Done.";
-        clear 
-        break;
-        ;;
      "Find me on Google Plus")
        python -mwebbrowser https://plus.google.com/+dustinwinings
        clear 
