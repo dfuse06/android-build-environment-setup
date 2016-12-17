@@ -35,7 +35,7 @@ do
         echo "Setting up to get ncurses5-compat-libs and installing.";
         sleep 2
         gpg --keyserver pgp.mit.edu --recv-keys C52048C0C0748FEE227D47A2702353E0F7E48EDB
-        yaourt -S ncurses5-compat-libs
+        yaourt -S --noconfirm ncurses5-compat-libs
         clear 
         echo "Getting just a few more packages.";
         sleep 2
