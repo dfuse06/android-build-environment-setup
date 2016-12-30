@@ -3,22 +3,15 @@
  CL_BLU="\033[34m"
  CL_RST="\033[0m"
 
-echo -e ${CL_BLU}"██████████████████  ████████${CL_BLU}";
-echo -e ${CL_BLU}"██████████████████  ████████${CL_BLU}";
-echo -e ${CL_BLU}"██████████████████  ████████${CL_BLU}";
-echo -e ${CL_BLU}"██████████████████  ████████${CL_BLU}";
-echo -e ${CL_BLU}"████████            ████████${CL_BLU}";
-echo -e ${CL_BLU}"████████  ████████  ████████${CL_BLU}";
-echo -e ${CL_BLU}"████████  ████████  ████████${CL_BLU}";
-echo -e ${CL_BLU}"████████  ████████  ████████${CL_BLU}";
-echo -e ${CL_BLU}"████████  ████████  ████████${CL_BLU}";
-echo -e ${CL_BLU}"████████  ████████  ████████${CL_BLU}";
-echo -e ${CL_BLU}"████████  ████████  ████████${CL_BLU}";
-echo -e ${CL_BLU}"████████  ████████  ████████${CL_BLU}";
-echo -e ${CL_BLU}"████████  ████████  ████████${CL_BLU}";
-echo -e ${CL_BLU}"████████  ████████  ████████${CL_RST}";
-
-
+echo -e ${CL_BLU}"___  ___            _                    ___            _           _     _ ${CL_BLU}";
+echo -e ${CL_BLU}"|  \/  |           (_)                  / _ \          | |         (_)   | |${CL_BLU}";
+echo -e ${CL_BLU}"| .  . | __ _ _ __  _  __ _ _ __ ___   / /_\ \_ __   __| |_ __ ___  _  __| |${CL_BLU}";
+echo -e ${CL_BLU}"| |\/| |/ _\ | '_ \| |/ _\ | '__/ _ \  |  _  | '_ \ / _\ | '__/ _ \| |/ _\ |${CL_BLU}";
+echo -e ${CL_BLU}"| |  | | (_| | | | | | (_| | | | (_) | | | | | | | | (_| | | | (_) | | (_| |${CL_BLU}";
+echo -e ${CL_BLU}"\_|  |_/\__,_|_| |_| |\__,_|_|  \___/  \_| |_/_| |_|\__,_|_|  \___/|_|\__,_|${CL_BLU}";
+echo -e ${CL_BLU}"                  _/ |                                                      ${CL_BLU}";
+echo -e ${CL_BLU}"                 |__/                                                       ${CL_BLU}";
+echo -e ${CL_BLU}"                                                                            ${CL_RST}";
 echo "Install a Android build environment for Manjaro.";
 
 while true
