@@ -45,6 +45,8 @@ do
         echo "Downloading Android-SDK.";
         yaourt -S --noconfirm android-sdk 
         yaourt -S --noconfirm android-sdk-platform-tools
+        clear 
+        break;
         ;;
      "Install Java 7 and set Java 7 as default")
         echo "Installing.";
