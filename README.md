@@ -20,4 +20,6 @@ export CCACHE_DIR=~/.ccache
 
 export JAVA_HOME=/usr/lib/jvm/java
 
+-<img src="https://raw.github.com/dfuse06/android-build-environment-setup/master/screen2.png">
+
 
