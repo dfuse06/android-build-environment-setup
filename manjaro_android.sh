@@ -24,7 +24,7 @@ echo "Install a Android build environment for Manjaro.";
 while true
 do 
   PS3='Pick an option!:'
-  options=("Install packages" "Get Android SDK" "Install Java 7 and set Java 7 as default" "Install Java 8 and set Java 8 as default" "Symlink make-3.81 and python2" "Find me on Google Plus" "Quit")
+  options=("Install packages" "Get Android SDK" "Install Java 7 and set Java 7 as default" "Install Java 8 and set Java 8 as default" "Symlink make-3.81 and python2" "Ccache" "Set Exports" "Find me on Google Plus" "Quit")
   select opt in "${options[@]}"
 do
     case $opt in
@@ -54,19 +54,8 @@ do
         ;;
      "Get Android SDK")
         echo "Downloading Android-SDK.";
-        cd ~/
-        wget http://www.mediafire.com/file/y2ccf55b5myavf5/tools_r25.2.3-linux.zip
-        sleep 2
-        echo "Installing my zip file..."
-        mkdir android-sdk
-        unzip tools_r25.2.3-linux.zip -d ~/android-sdk
-        sleep 2
-        echo "To install other SDK tools, use the sdkmanager.....Wait I will bring you there.";
-        sleep 4
-        cd ~/android-sdk/tools/
-        bash android
-        cd ~/
-        echo "Done.";
+        yaourt -S --noconfirm android-sdk 
+        yaourt -S --noconfirm android-sdk-platform-tools
         clear 
         break;
         ;;
@@ -108,6 +97,23 @@ do
        clear 
        break;
        ;;
+     "Ccache")
+       yaourt -S --noconfirm ccache
+       mkdir .ccache
+       echo -n "Type the amount you want to set.Example 50G >"
+       read text
+       ccache -M $text 1> /dev/null 2>&1
+       clear 
+       break;
+       ;;
+     "Set Exports")
+      echo -n "Type Editor,copy & paste from my git.>"
+      read text
+      $text .bashrc && python -mwebbrowser https://github.com/dfuse06/android-build-environment-setup
+      source ~/.bashrc
+      clear 
+      break;
+      ;;
      "Find me on Google Plus")
        python -mwebbrowser https://plus.google.com/+dustinwinings
        clear 
