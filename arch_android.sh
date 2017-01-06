@@ -28,7 +28,7 @@ do
         ;;
     "Install packages")
         echo "Getting packages.";
-        yaourt -S --noconfirm git gnupg flex bison gperf sdl wxgtk squashfs-tools curl ncurses zlib schedtool perl-switch zip unzip libxslt python2-virtualenv bc gcc-multilib lib32-zlib lib32-libtinfo
+        yaourt -S --noconfirm git gnupg flex bison gperf sdl wxgtk squashfs-tools curl ncurses zlib schedtool perl-switch zip unzip libxslt python2-virtualenv bc gcc-multilib lib32-zlib lib32-libtinfo android-udev-git
         clear
         echo "Setting up to get ncurses5-compat-libs and installing.";
         sleep 2
